@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form action="#">
+        <table>
+            
+            <tr>
+                <th>Formulário de cadastro</th>
+            </tr>
+
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome" placeholder="Digite o seu nome."></td>
+            </tr>
+
+            <tr>
+                <td><label for="sobrenome">Sobrenome:</label></td>
+                <td><input type="text" id="sobrenome" name="sobrenome" placeholder="Digite o seu sobrenome."></td>
+            </tr>
+
+            <tr>
+                <td><label for="endereco">Endereço:</label></td>
+                <td><textarea name="endereco" id="endereco" cols="20" rows="4" placeholder="Digite aqui o seu endereço."></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="disciplinas">Disciplinas:</label></td>
+                <td>
+                    <input type="checkbox">Programação<br>
+                    <input type="checkbox">Lógica<br>
+                    <input type="checkbox">Algorítmo<br>
+                    <input type="checkbox">Banco de dados<br>
+                    <input type="checkbox">Mobile<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="genero">Gênero:</label></td>
+                <td>
+                    <input type="radio" name="genero" id="homem" checked>Homem
+                    <input type="radio" name="genero" id="mulher">Mulher
+                    <input type="radio" name="genero" id="nda">Não Informar
+                </td>   
+            </tr>
+
+            <tr>
+                <td><label for="idade">Idade:</label></td>
+                <td><select name="idade">
+                    <option>18 a 22</option>
+                    <option>22 a 25</option>
+                    <option>25 a 30</option>
+                    <option>30+</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="pfp">Foto de perfil:</label></td>
+                <td><input type="file" name="pfp" id="pfp" required></td>
+            </tr>
+        </table>
+
+        <tr>
+            <td><input type="button" value="Cadastrar"></td>
+            <td><input type="reset" value="Apagar"></td>
+        </tr>
+    </form>
+</body>
+</html>
